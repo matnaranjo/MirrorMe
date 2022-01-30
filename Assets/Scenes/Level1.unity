@@ -659,6 +659,7 @@ GameObject:
   - component: {fileID: 607225334}
   - component: {fileID: 607225336}
   - component: {fileID: 607225335}
+  - component: {fileID: 607225337}
   m_Layer: 5
   m_Name: TimeRemaining
   m_TagString: Untagged
@@ -707,10 +708,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -718,7 +719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Remaining Time : 00.0'
+  m_Text: 'Remaining Time: 00.0'
 --- !u!222 &607225336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -727,6 +728,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607225333}
   m_CullTransparentMesh: 1
+--- !u!114 &607225337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607225333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c56df9976312c74f80451ec90050485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Counter: {fileID: 607225335}
 --- !u!1 &878219774
 GameObject:
   m_ObjectHideFlags: 0
