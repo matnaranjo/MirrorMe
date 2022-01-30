@@ -579,5 +579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1262697056205170971, guid: 6cc4d160bdc87fc409693ca76cce4053, type: 3}
+      propertyPath: m_Text
+      value: "\n\n\nHorizontal movement : A-D\nJump : Space\n\nThe actions of both
+        characters are tied,\n jump over the obstacles and help your\nmirrorself
+        to get all the stars.\n\n"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cc4d160bdc87fc409693ca76cce4053, type: 3}

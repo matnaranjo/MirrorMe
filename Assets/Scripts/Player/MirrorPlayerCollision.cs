@@ -33,10 +33,12 @@ public class MirrorPlayerCollision : MonoBehaviour
 
         PosTemp.y = NegaVerison.transform.position.y;
 
-        NegaVerison.transform.position = PosTemp;
+        if (NoPushCollisionX!=0){
+            NegaVerison.transform.position = PosTemp;
+        }
 
         if (collision.gameObject.CompareTag("NoPush")){
-            MirrorPlayerCol = true;
+            if (NoPushCollisionY==0){MirrorPlayerCol = true;}
         }
     }
 

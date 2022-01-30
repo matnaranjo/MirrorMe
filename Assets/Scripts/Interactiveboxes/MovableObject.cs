@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MovableObject : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject Box;
 
     private bool Grabbed= false;
 
@@ -27,9 +29,19 @@ public class MovableObject : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         ycollision = collision.GetContact(0).normal.y;
-        xcollision = collision.GetContact(0).normal.x;        
+        xcollision = collision.GetContact(0).normal.x;
+        Debug.Log("gato");
 
-        if (((xcollision>0.9f || xcollision<-0.9f) && ycollision == 0.0f)){Grabbed = true;}
+        if (collision.gameObject.CompareTag("PlayerCharacter")){
+            if (((xcollision>0.9f || xcollision<-0.9f) && ycollision == 0.0f)){Grabbed = true;}
+        }  
+
+        else if (collision.gameObject.CompareTag("NoPush")){
+            PlayerCollision.PlayerCol= true;
+            MirrorPlayerCollision.MirrorPlayerCol = true;
+        }     
+
+        
         
     }
 
@@ -38,8 +50,9 @@ public class MovableObject : MonoBehaviour
     }
 
     private void BoxMovement(){
+        
         if (Grabbed==true){
-            transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
+            Box.transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
         }
     }
 
