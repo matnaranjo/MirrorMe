@@ -8,11 +8,16 @@ public class TimeManager : MonoBehaviour
     [SerializeField]
     private float MaxTimeForLevel = 60.0f;
 
+    public static float RemainingTime;
+
     private float timer;
+
+    public static bool TimeIsOver = false;
     // Start is called before the first frame update
     void Start()
     {
         timer = 0;
+        RemainingTime = MaxTimeForLevel;
     }
 
     // Update is called once per frame
@@ -24,10 +29,12 @@ public class TimeManager : MonoBehaviour
     private void countdown(){
         timer += Time.deltaTime;
 
-        if (timer>=0.1f){
-            timer-=0.1f;
-            MaxTimeForLevel-=0.1f;
+        if (timer>=1.0f && RemainingTime>0){
+            timer-=1.0f;
+            RemainingTime-=1.0f;
         }
-        Debug.Log(MaxTimeForLevel.ToString("#.#"));
+        if (RemainingTime==0){
+            TimeIsOver = true;
+        }
     }
 }
