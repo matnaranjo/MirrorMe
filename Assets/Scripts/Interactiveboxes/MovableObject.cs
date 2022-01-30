@@ -32,9 +32,14 @@ public class MovableObject : MonoBehaviour
         if (((xcollision>0.9f || xcollision<-0.9f) && ycollision == 0.0f)){Grabbed = true;}
         
     }
+
+    private void OnCollisionExit2D(){
+        Grabbed=false;
+    }
+
     private void BoxMovement(){
         if (Grabbed==true){
-            transform.position += new Vector3(X_pos_setter.XInput, 0.0f, 0.0f);
+            transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
         }
     }
 
