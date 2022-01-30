@@ -24,7 +24,6 @@ public class LevelKeyFunctions : MonoBehaviour
     }
 
     void FixedUpdate(){
-        LevelKeyMovement();
     }
 
     private void OnCollisionEnter2D(Collision2D col){
@@ -35,7 +34,4 @@ public class LevelKeyFunctions : MonoBehaviour
 
     }
 
-    private void LevelKeyMovement(){
-        transform.RotateAround(KeyHolder.gameObject.transform.position, KeyHolder.gameObject.transform.forward, -Angle);
-    }
 }
