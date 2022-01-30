@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   XPosSetter: {fileID: 0}
   runSpeed: 5
-  jumpSpeed: -6.5
+  jumpSpeed: -7
   betterJump: 0
   fallMultiplier: -0.5
   lowJumpMultiplier: -1
