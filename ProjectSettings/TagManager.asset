@@ -46,6 +46,9 @@ TagManager:
   - name: BackGround
     uniqueID: 3048938807
     locked: 0
+  - name: Joints
+    uniqueID: 4172898571
+    locked: 0
   - name: Floor
     uniqueID: 742113585
     locked: 0

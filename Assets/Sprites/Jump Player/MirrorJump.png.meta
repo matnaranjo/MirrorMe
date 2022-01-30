@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 43ca31cd51f415e4d863a03991621245
+guid: 30e41567a57423e46a1664e7a163d154
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4035959289877228764
-    second: Walk_0
+      213: 2264937230120882811
+    second: MirrorJump_0
   - first:
-      213: -982904232830982447
-    second: Walk_1
+      213: -7761358280187158831
+    second: MirrorJump_1
   - first:
-      213: -350908408369970039
-    second: Walk_2
+      213: -8632514246344499422
+    second: MirrorJump_2
   - first:
-      213: -5409570386352685021
-    second: Walk_3
+      213: -7261249384764459780
+    second: MirrorJump_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: MirrorJump_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 719
-        height: 791
+        width: 720
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdce119379b920830800000000000000
-      internalID: 4035959289877228764
+      spriteID: b7299ef196cae6f10800000000000000
+      internalID: 2264937230120882811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: MirrorJump_1
       rect:
         serializedVersion: 2
-        x: 728
+        x: 739
         y: 0
         width: 721
-        height: 791
+        height: 687
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d6a1e1dec50c52f0800000000000000
-      internalID: -982904232830982447
+      spriteID: 1de58eef3cd1a4490800000000000000
+      internalID: -7761358280187158831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_2
+      name: MirrorJump_2
       rect:
         serializedVersion: 2
-        x: 1461
+        x: 1478
         y: 0
-        width: 721
-        height: 791
+        width: 722
+        height: 794
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 984096a69a2512bf0800000000000000
-      internalID: -350908408369970039
+      spriteID: 22f132ca706233880800000000000000
+      internalID: -8632514246344499422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_3
+      name: MirrorJump_3
       rect:
         serializedVersion: 2
-        x: 2191
+        x: 2219
         y: 0
-        width: 729
-        height: 791
+        width: 1005
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320c9fd05685de4b0800000000000000
-      internalID: -5409570386352685021
+      spriteID: cf43793082cda3b90800000000000000
+      internalID: -7261249384764459780
       vertices: []
       indices: 
       edges: []
