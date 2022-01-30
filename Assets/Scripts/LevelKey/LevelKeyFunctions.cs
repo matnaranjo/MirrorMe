@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelKeyFunctions : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class LevelKeyFunctions : MonoBehaviour
 
         if (col.gameObject.CompareTag(PlayerTag)){
             Destroy(this.gameObject);
+            SceneManager.LoadScene("Victory");
         }
 
     }
