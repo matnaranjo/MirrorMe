@@ -5,7 +5,7 @@ using UnityEngine;
 public class X_pos_setter : MonoBehaviour
 {
 
-    private float XInput = 0.0f;
+    public static float XInput = 0.0f;
     public float PlayerSpeed = 2;
 
     [SerializeField]
@@ -39,9 +39,11 @@ public class X_pos_setter : MonoBehaviour
     }
 
     private void XMovement(){
+
+        
+
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
-
             XInput = Input.GetAxisRaw("Horizontal");
             XChange = XInput * Time.fixedDeltaTime * PlayerSpeed;
 
@@ -50,7 +52,6 @@ public class X_pos_setter : MonoBehaviour
 
             PlayerSpriteRenderer.flipX = false;
             MirrorPlayerSpriteRenderer.flipX = false;
-
         }
         else if (Input.GetKey("a") || Input.GetKey("left")){
             XInput = Input.GetAxisRaw("Horizontal");
@@ -64,13 +65,16 @@ public class X_pos_setter : MonoBehaviour
         }
 
         else
-        {
-            
+        {  
             XChange = 0.0f;
             PlayerAnimator.SetBool("Run", false);
             MirrorPlayerAnimator.SetBool("Run", false);
         }
 
+        if (PlayerCollision.PlayerCol){XChange=0;}
+
         transform.position += new Vector3(XChange, 0.0f, 0.0f);
+        
+
     }
 }

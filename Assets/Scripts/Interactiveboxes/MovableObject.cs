@@ -34,12 +34,12 @@ public class MovableObject : MonoBehaviour
     }
     private void BoxMovement(){
         if (Grabbed==true){
-            transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
+            transform.position += new Vector3(X_pos_setter.XInput, 0.0f, 0.0f);
         }
     }
 
     private void CollisionHandler(){
-        if ((xcollision>0.9f && X_pos_setter.XChange<0)||(xcollision<-0.9f && X_pos_setter.XChange>0)){
+        if ((xcollision>0.9f && X_pos_setter.XInput<0)||(xcollision<-0.9f && X_pos_setter.XInput>0)){
             Grabbed = false;
         }
     }
