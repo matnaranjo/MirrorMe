@@ -31,7 +31,9 @@ public class Player_Move : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
+        if (!PlayerCollision.PlayerCol && !MirrorPlayerCollision.MirrorPlayerCol){
+            transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
+        }
         
         if (Input.GetKey("space") && CheckGrounds.isGrounded)
         {
