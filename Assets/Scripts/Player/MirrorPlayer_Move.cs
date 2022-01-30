@@ -35,7 +35,6 @@ public class MirrorPlayer_Move : MonoBehaviour
             transform.position += new Vector3(X_pos_setter.XChange, 0.0f, 0.0f);
         }
         
-        
         if (Input.GetKey("space") && CheckGrounds.isGrounded)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
@@ -51,17 +50,5 @@ public class MirrorPlayer_Move : MonoBehaviour
             animator.SetBool("Jump", false);
         }
 
-        // if (betterJump)
-        // {
-        //     if (rb2D.velocity.y<0)
-        //     {
-        //         rb2D.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime;
-        //     }
-        //     if (rb2D.velocity.y>0 && !Input.GetKey("space"))
-        //     {
-        //         rb2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime;
-        //     }
-
-        // }
     }
 }

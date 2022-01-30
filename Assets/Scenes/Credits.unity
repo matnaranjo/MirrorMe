@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1262697056205170971, guid: 6cc4d160bdc87fc409693ca76cce4053, type: 3}
       propertyPath: m_Text
-      value: "\n\n\n\n\nDise\xF1o de personajes y sprites  Andres Felipe LLanos\nMovimientos
+      value: "\n\n\n\n\nDise\xF1o de personajes y sprites  Yerikson Clavijo\nMovimientos
         Basicos Kevin\nEscenas y UI Mateo Rodriguez Naranjo\nColor y dise\xF1o de
         nivel  Mateo Rodriguez Naranjo\nColisiones y mecanicas  Mateo Rodirguez Naranjo\n\n"
       objectReference: {fileID: 0}

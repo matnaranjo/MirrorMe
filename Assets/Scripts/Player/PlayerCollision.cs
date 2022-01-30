@@ -31,10 +31,12 @@ public class PlayerCollision : MonoBehaviour
 
         PosTemp.y = NegaVerison.transform.position.y;
 
-        NegaVerison.transform.position = PosTemp;
+        if (NoPushCollisionX!=0){
+            NegaVerison.transform.position = PosTemp;
+        }
         
         if (collision.gameObject.CompareTag("NoPush")){
-            PlayerCol = true;
+            if (NoPushCollisionY==0){PlayerCol = true;}
         }
     }
 
