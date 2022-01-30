@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class TimeManager : MonoBehaviour
         }
         if (RemainingTime==0){
             TimeIsOver = true;
+            SceneManager.LoadScene("Death");
         }
     }
 }

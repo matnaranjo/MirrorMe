@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LevelKey
   - PlayerCharacter
+  - NoPush
   layers:
   - Default
   - TransparentFX

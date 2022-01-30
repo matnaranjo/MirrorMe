@@ -71,9 +71,11 @@ public class X_pos_setter : MonoBehaviour
             MirrorPlayerAnimator.SetBool("Run", false);
         }
 
-        if (PlayerCollision.PlayerCol){XChange=0;}
+        if (!PlayerCollision.PlayerCol && !MirrorPlayerCollision.MirrorPlayerCol){
+            transform.position += new Vector3(XChange, 0.0f, 0.0f);
+        }
 
-        transform.position += new Vector3(XChange, 0.0f, 0.0f);
+        
         
 
     }

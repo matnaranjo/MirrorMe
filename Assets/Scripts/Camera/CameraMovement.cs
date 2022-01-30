@@ -25,7 +25,10 @@ public class CameraMovement : MonoBehaviour
     }
 
     private void FollowPlayer(){
-        CameraPos.x = ObjectToFollowTransform.position.x;
-        transform.position = CameraPos;
+        if (ObjectToFollowTransform.position.x>-15 && ObjectToFollowTransform.position.x<15){
+            CameraPos.x = ObjectToFollowTransform.position.x;
+            transform.position = CameraPos;
+        }
+            
     }
 }
